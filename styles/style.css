@@ -42,7 +42,7 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 711px 423px;
+  grid-template-columns: 711px auto;
   gap: 30px;
   margin: auto;
   width: 1140px;
@@ -230,7 +230,7 @@ ol {
 }
 
 .content__list-item:not(:last-child) {
-  padding-bottom: 30px;
+  padding-bottom: 25px; 
 }
 
 .search-form__textfield:focus-visible {
@@ -249,7 +249,7 @@ ol {
 
 .content__video-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: flex-start;
 }
 
@@ -262,6 +262,7 @@ ol {
 .content__video-card-description-container {
   object-fit: cover;
   object-position: center;
+  width: 200px; 
 }
 
 .content__video-card-title {
@@ -293,10 +294,10 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  outline: 1px solid currentColor;
+  outline: 1px solid #fff;
 }
 
-.content__card-link_current:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
